@@ -15,4 +15,4 @@ public class LinearEq {
         System.out.println("x = " + result);
 
     }
-    }
+}
