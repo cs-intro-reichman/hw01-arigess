@@ -3,8 +3,6 @@
  * prints them, and then prints the minimal number that was generated.
  */
 public class GenThree {
-    public static final int RANDOM_GENERATIONS = 3;
-
     public static void main(String[] args) {
         int numberOne = Integer.parseInt(args[0]);
         int numberTwo = Integer.parseInt(args[1]);
