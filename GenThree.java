@@ -11,12 +11,16 @@ public class GenThree {
         int lowerBound = Math.min(numberOne, numberTwo);
         int upperBound = Math.max(numberOne, numberTwo);
 
-        int minimalNumber = upperBound;
-        for (int i = 0; i < RANDOM_GENERATIONS; i++) {
-            int randomNumber = (int) Math.floor(Math.random() * (upperBound - lowerBound) + lowerBound);
-            System.out.println(randomNumber);
-            minimalNumber = Math.min(minimalNumber, randomNumber);
-        }
+
+        int randomNumberOne = (int) Math.floor(Math.random() * (upperBound - lowerBound) + lowerBound);
+        System.out.println(randomNumberOne);
+        int randomNumberTwo = (int) Math.floor(Math.random() * (upperBound - lowerBound) + lowerBound);
+        System.out.println(randomNumberTwo);
+        int randomNumberThree = (int) Math.floor(Math.random() * (upperBound - lowerBound) + lowerBound);
+        System.out.println(randomNumberThree);
+
+        int minimalNumber = Math.min(randomNumberOne, randomNumberTwo);
+        minimalNumber = Math.min(minimalNumber, randomNumberThree);
 
         System.out.printf("The minimal generated number was %d", minimalNumber);
     }
